@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loggie - vanilla</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div id="home" class="home container-fluid" style="height: 700px">
+      <div class="nav-container text-light m-4 mt-0">
+        <nav class="navbar navbar-expand-lg bg-body-none">
+          <div class="container-fluid">
+            <a class="navbar-brand text-light" href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="39"
+                height="39"
+                viewBox="0 0 39 39"
+              >
+                <g id="icon" transform="translate(-120 -42)">
+                  <path
+                    id="Rectangle_17"
+                    data-name="Rectangle 17"
+                    d="M120,61.5A19.5,19.5,0,0,1,139.5,42h0A19.5,19.5,0,0,1,159,61.5h0A19.5,19.5,0,0,1,139.5,81h0A19.5,19.5,0,0,1,120,61.5Z"
+                    fill="#ff9a29"
+                  />
+                  <path
+                    id="Vector"
+                    d="M137.717,73a2.635,2.635,0,0,1-1.33-.362l-7.078-4.17a2.653,2.653,0,0,1-.959-.977,2.7,2.7,0,0,1-.35-1.33V58.532a2.7,2.7,0,0,1,.33-1.3l.006-.007.014-.03a2.631,2.631,0,0,1,.96-.974l11.65-6.865a2.6,2.6,0,0,1,2.647,0l.006,0,7.067,4.2a2.664,2.664,0,0,1,.965.978A2.7,2.7,0,0,1,152,55.878v7.591a2.716,2.716,0,0,1-.354,1.337,2.682,2.682,0,0,1-.967.981l-11.63,6.849A2.639,2.639,0,0,1,137.717,73ZM130.25,59.649v6.512a.4.4,0,0,0,.193.344l6.15,3.626V63.354c-.069-.033-.139-.07-.206-.109Zm10.845,2.395-2.048,1.2c-.056.033-.122.068-.2.107v6.775l2.25-1.326Zm4.531-2.652h0l-2.281,1.336v6.749l2.281-1.344V59.392Zm4.125-2.417-1.875,1.1v6.735l1.672-.985a.394.394,0,0,0,.149-.149.407.407,0,0,0,.053-.2Zm-7.465-5.7a.378.378,0,0,0-.189.051L131.341,57.66l6.174,3.617a.392.392,0,0,0,.4,0l10.728-6.284-6.172-3.67A.379.379,0,0,0,142.285,51.272Z"
+                    fill="#fff"
+                  />
+                </g>
+              </svg>
+              Loggie</a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="bar-tabs nav-link active text-light"
+                    aria-current="page"
+                    href="#home"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="bar-tabs nav-link text-light" href="#services"
+                    >Services</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="bar-tabs nav-link text-light" href="#features"
+                    >Features</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="bar-tabs nav-link text-light" href="#clients"
+                    >Client</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="bar-tabs nav-link text-light" href="#about"
+                    >About</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="bar-tabs nav-link text-light" href="#contact"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+              <div class="d-flex" role="search">
+                <button id="btn" class="btn login" type="submit">Login</button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="container">
+        <div
+          class="d-flex align-items-center justify-content-center"
+          style="height: 500px"
+        >
+          <div class="hero-content p-2 text-center">
+            <h1 class="pb-2">The Largest Premium Logistic Service</h1>
+
+            <p class="pb-4">
+              From production sources to markets with the aim of optimizing the
+              use of capital. Manufacturing and marketing.
+            </p>
+            <a class="get-started m-4" href="./error.html">Get Started</a>
+            <a class="learn-more m-3 text-nowrap" href="/error.html"
+              >Learn More ></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="services" class="container content" style="padding-top: 142px">
+      <div class="d-flex justify-content-lg-start justify-content-sm-center">
+        <div>
+          <h2 class="heading pb-2">Our Serivces</h2>
+          <div class="underline"></div>
+          <p class="content pt-4" style="width: 600px">
+            Logistics Activities Themselves Aim To Provide The Right Goods At
+            The Right Time And Place, The Company.
+          </p>
+        </div>
+      </div>
+      <div class="container text-center">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+          <div class="col">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="100"
+              height="100"
+              viewBox="0 0 100 100"
+            >
+              <g id="icon" transform="translate(-120 -1069)">
+                <circle
+                  id="Ellipse_2"
+                  data-name="Ellipse 2"
+                  cx="50"
+                  cy="50"
+                  r="50"
+                  transform="translate(120 1069)"
+                  fill="#ff9a29"
+                />
+                <path
+                  id="ic-clock"
+                  d="M170,1137.8a14.7,14.7,0,1,1,5.625-1.119A14.628,14.628,0,0,1,170,1137.8Zm0-27.3a2.1,2.1,0,0,0-2.1,2.1v10.5a2.1,2.1,0,0,0,2.1,2.1h6.3a2.114,2.114,0,0,0,1.484-.615,2.1,2.1,0,0,0,0-2.97A2.113,2.113,0,0,0,176.3,1121h-4.2v-8.4a2.1,2.1,0,0,0-2.1-2.1Zm-18.122,7.219h0A10.5,10.5,0,0,1,159.5,1100a10.5,10.5,0,0,1,8.479,4.309,18.919,18.919,0,0,0-16.1,13.41Zm36.245,0v0a18.916,18.916,0,0,0-16.1-13.408,10.5,10.5,0,1,1,16.1,13.409Z"
+                  fill="#fff"
+                />
+              </g>
+            </svg>
+            <p class="mt-3 tagline">On Time</p>
+            <p class="description">
+              Delivery On A Schedule That Is Always On Time
+            </p>
+          </div>
+          <div class="col">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="100"
+              height="100"
+              viewBox="0 0 100 100"
+            >
+              <g id="icon" transform="translate(-428 -1069)">
+                <circle
+                  id="Ellipse_2"
+                  data-name="Ellipse 2"
+                  cx="50"
+                  cy="50"
+                  r="50"
+                  transform="translate(428 1069)"
+                  fill="#ff9a29"
+                />
+                <path
+                  id="Vector"
+                  d="M488.494,1140a9.506,9.506,0,0,1-6.563-2.559,5.5,5.5,0,0,0-3.944-1.64,5.421,5.421,0,0,0-3.931,1.634l-.007.005a9.679,9.679,0,0,1-13.116,0l-.007-.006A5.415,5.415,0,0,0,457,1135.8v-4.2a9.487,9.487,0,0,1,6.557,2.561l.006,0a5.538,5.538,0,0,0,7.857,0l0,0a9.693,9.693,0,0,1,13.129,0,5.552,5.552,0,0,0,7.878,0l0,0A9.513,9.513,0,0,1,499,1131.6v4.2h-.005a5.5,5.5,0,0,0-3.939,1.639A9.5,9.5,0,0,1,488.494,1140Zm2.106-10.5h-2.106a9.5,9.5,0,0,1-6.563-2.56,5.506,5.506,0,0,0-3.944-1.64,5.42,5.42,0,0,0-3.931,1.635l-.007.005a9.5,9.5,0,0,1-6.56,2.56H465.4l-4.2-16.8,4.2-1.05V1104.3a2.1,2.1,0,0,1,1.688-2.06l8.812-1.762V1098h4.2v2.479l8.812,1.762a2.1,2.1,0,0,1,1.688,2.06v7.348l4.2,1.05-3.487,13.946-.657,2.629-.056.224Zm-12.6-21h0l8.4,2.1v-4.58l-8.4-1.68-8.4,1.68v4.58l8.4-2.1Z"
+                  fill="#fff"
+                />
+              </g>
+            </svg>
+            <p class="mt-3 tagline">Extensive Service</p>
+            <p class="description">
+              With A Wide Range Of Delivery Sam To Cross Continents
+            </p>
+          </div>
+          <div class="col">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="100"
+              height="100"
+              viewBox="0 0 100 100"
+            >
+              <g id="icon" transform="translate(-735 -1069)">
+                <circle
+                  id="Ellipse_2"
+                  data-name="Ellipse 2"
+                  cx="50"
+                  cy="50"
+                  r="50"
+                  transform="translate(735 1069)"
+                  fill="#ff9a29"
+                />
+                <g id="Group">
+                  <path
+                    id="Vector"
+                    d="M783.675,1140a1.313,1.313,0,0,1-1.275-1.626l.905-3.621h-2.257a1.313,1.313,0,0,1-1.174-1.9l2.625-5.25a1.311,1.311,0,0,1,1.174-.724H786.3a1.312,1.312,0,0,1,1.244,1.727l-.735,2.21h2.116a1.313,1.313,0,0,1,1.024,2.131l-5.251,6.564a1.315,1.315,0,0,1-1.022.489Zm14.447-15.747H773.174a9.188,9.188,0,1,1,1.066-18.315,13.127,13.127,0,0,1,20.912-4.5,13.215,13.215,0,0,1,4.023,7.139,7.875,7.875,0,0,1-1.052,15.68Z"
+                    fill="#fff"
+                  />
+                </g>
+              </g>
+            </svg>
+            <p class="mt-3 tagline">Security Guaranteed</p>
+            <p class="description">
+              The Safety Of The Goods During Delivery Is Guaranteed
+            </p>
+          </div>
+          <div class="col">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="100"
+              height="100"
+              viewBox="0 0 100 100"
+            >
+              <g id="icon" transform="translate(-1043 -1069)">
+                <circle
+                  id="Ellipse_2"
+                  data-name="Ellipse 2"
+                  cx="50"
+                  cy="50"
+                  r="50"
+                  transform="translate(1043 1069)"
+                  fill="#ff9a29"
+                />
+                <path
+                  id="Vector"
+                  d="M1104.455,1134.545a5.728,5.728,0,0,1-5.728-5.728h-11.454a5.727,5.727,0,1,1-11.454,0H1072v-21a3.818,3.818,0,0,1,3.819-3.819h26.726v7.637h5.728l5.728,7.636v9.545h-3.819a5.688,5.688,0,0,1-1.678,4.05A5.766,5.766,0,0,1,1104.455,1134.545Zm0-8.591a2.88,2.88,0,0,0-2.025.839,2.864,2.864,0,0,0,0,4.05,2.862,2.862,0,0,0,4.049,0,2.863,2.863,0,0,0,0-4.05A2.879,2.879,0,0,0,1104.455,1125.954Zm-22.91,0a2.864,2.864,0,1,0,2.025.839A2.845,2.845,0,0,0,1081.545,1125.954Zm7.637-8.59v5.727l7.636-7.636-7.636-7.636v5.728h-11.454v3.818Zm13.363-2.864v4.773h8.534l-3.761-4.773Z"
+                  fill="#fff"
+                />
+              </g>
+            </svg>
+            <p class="mt-3 tagline">Fastest Delivery</p>
+            <p class="description">
+              The Fastest Route For Delivery Goods To Local Sector
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="features"
+      class="container content"
+      style="padding-top: 100px; padding-bottom: 100px"
+    >
+      <div class="d-flex justify-content-start">
+        <div>
+          <h2 class="heading pb-2">Quality Of Work</h2>
+          <div class="underline"></div>
+          <p class="content pt-4 pb-4" style="width: 600px">
+            With A Large Level Of Business To Provide Companies To Be Able To
+            Work Professionally Done To Each Of Our Customers
+          </p>
+        </div>
+      </div>
+      <div class="container text-center">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+          <div class="col">
+            <img
+              src="https://images.pexels.com/photos/4484151/pexels-photo-4484151.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              class="card-image img-fluid"
+              alt="checking-package"
+            />
+            <p class="mt-3 features-content">Skilled Checker</p>
+            <p class="features-text">
+              Generators On The Internet Tend To Repeat Predefined Chunks As
+              Necessary, Making This The First True
+            </p>
+          </div>
+          <div class="col">
+            <img
+              src="https://images.pexels.com/photos/4391478/pexels-photo-4391478.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              class="card-image img-fluid"
+              alt="loading-packages"
+            />
+
+            <p class="mt-3 tagline">Neat Delivery</p>
+            <p class="description">
+              Emo Enim Ipsam Voluptatem Quia Voluptas Sit Aspernatur Aut Odit
+              Aut Fugit, Sed Quia Consequuntur Magni
+            </p>
+          </div>
+          <div class="col">
+            <img
+              src="https://images.pexels.com/photos/4481259/pexels-photo-4481259.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              class="card-image img-fluid"
+              alt="warehouse-associate"
+            />
+
+            <p class="mt-3 tagline">Good Categorization</p>
+            <p class="description">
+              Natus Error Sit Voluptatem Accusantium Doloremque Laudantium,
+              Totam Rem Aperiam, Eaque Ipsa.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="clients" class="clients container-fluid" style="height: 471px">
+      <div class="container d-flex justify-content-start">
+        <div>
+          <h2 class="heading text-light pb-2 pt-5">Working With</h2>
+          <div class="underline"></div>
+          <p class="content pt-4 text-light" style="width: 600px">
+            Here Are Some Of The Great Companies In The Field That We Work With
+            From Various Fields And Business Scales
+          </p>
+        </div>
+      </div>
+      <div class="row row-cols-2 row-cols-sm-4 row-cols-md-4 text-center">
+        <div class="col svg">
+          <svg
+            fill="#ffffff"
+            width="100px"
+            height="100px"
+            viewBox="0 0 32 32"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            stroke="#ffffff"
+            stroke-width="0.00032"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <title>ebay</title>
+              <path
+                d="M6.981 15.595c0-0.004 0-0.008 0-0.013 0-1.067-0.865-1.932-1.932-1.932-0.079 0-0.157 0.005-0.233 0.014l0.009-0.001c-0.061-0.006-0.131-0.010-0.202-0.010-1.098 0-1.997 0.855-2.066 1.936l-0 0.006zM12.417 18.737c0.012 0 0.026 0 0.041 0 1.278 0 2.313-1.036 2.313-2.313 0-0.074-0.004-0.148-0.010-0.221l0.001 0.009c0.003-0.047 0.005-0.101 0.005-0.155 0-1.308-1.061-2.369-2.369-2.369s-2.369 1.061-2.369 2.369c0 0.055 0.002 0.109 0.005 0.163l-0-0.007c-0.006 0.064-0.010 0.138-0.010 0.212 0 1.277 1.035 2.312 2.312 2.312 0.014 0 0.028-0 0.043-0l-0.002 0h0.040zM19.99 16.394c-1.368 0.042-2.212 0.291-2.212 1.187 0 0.581 0.45 1.212 1.631 1.212 0.087 0.012 0.187 0.020 0.289 0.020 1.179 0 2.134-0.956 2.134-2.134 0-0.053-0.002-0.107-0.006-0.159l0 0.007v-0.162c-0.562 0-1.237 0.008-1.854 0.027h0.015zM8.572 16.165v-6.148h1.5v3.781c0.626-0.7 1.532-1.139 2.541-1.139 0.074 0 0.148 0.002 0.221 0.007l-0.010-0.001c0.034-0.001 0.073-0.002 0.113-0.002 1.891 0 3.424 1.533 3.424 3.424 0 0.051-0.001 0.102-0.003 0.152l0-0.007c0 0.018 0 0.039 0 0.060 0 0.274-0.027 0.542-0.080 0.8l0.004-0.026c0.3-1.191 1.592-1.631 3.619-1.68 0.637-0.023 1.368-0.023 1.949-0.023v-0.169c0-1.106-0.695-1.555-1.912-1.555-0.9 0-1.556 0.375-1.631 1.012h-1.593c0.17-1.612 1.874-2.024 3.357-2.024 0.126-0.017 0.272-0.027 0.421-0.027 1.059 0 2 0.508 2.591 1.294l0.006 0.008-0.545-1.050h1.762l2.568 5.155 2.568-5.156h1.553l-4.649 9.129h-1.682l1.337-2.549-2.912-5.473c0.158 0.319 0.251 0.694 0.251 1.091 0 0.025-0 0.050-0.001 0.074l0-0.004v3.074c0 0.432 0.012 0.862 0.050 1.256h-1.392c-0.036-0.287-0.057-0.619-0.057-0.955v-0.001c-0.62 0.744-1.547 1.215-2.584 1.215-0.111 0-0.221-0.005-0.329-0.016l0.014 0.001c-1.849 0-2.839-0.975-2.839-2.118 0-0.179 0.017-0.354 0.049-0.524l-0.003 0.017c-0.369 1.508-1.708 2.61-3.305 2.61-0.054 0-0.107-0.001-0.16-0.004l0.008 0c-0.040 0.002-0.087 0.003-0.134 0.003-1.037 0-1.969-0.448-2.613-1.162l-0.003-0.003c-0.001 0.325-0.019 0.643-0.054 0.957l0.004-0.040h-1.475c0.025-0.487 0.050-1.068 0.050-1.556v-1.312h-6.036c0.003 1.204 0.979 2.178 2.183 2.178 0.047 0 0.093-0.001 0.139-0.004l-0.006 0c0.058 0.006 0.126 0.010 0.194 0.010 0.79 0 1.468-0.478 1.761-1.16l0.005-0.012h1.55c-0.3 1.612-2.012 2.156-3.486 2.156-2.678 0.026-3.865-1.457-3.865-3.444-0.007-0.082-0.011-0.178-0.011-0.275 0-1.878 1.522-3.4 3.4-3.4 0.178 0 0.353 0.014 0.524 0.040l-0.019-0.002c0.116-0.014 0.249-0.023 0.385-0.023 1.821 0 3.297 1.476 3.297 3.297 0 0.082-0.003 0.163-0.009 0.243l0.001-0.011v0.005z"
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <div class="col svg">
+          <svg
+            fill="#ffffff"
+            width="100px"
+            height="100px"
+            viewBox="0 0 32 32"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            stroke="#ffffff"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <title>alibaba</title>
+              <path
+                d="M18.988 21.273c-1.203 0.055-1.081-0.574-0.377-1.542 1.649-2.209 4.774-5.293 4.881-7.475 0.189-2.853-2.678-3.781-5.625-3.754-2.042 0.087-3.963 0.495-5.75 1.174l0.126-0.042c-4.242 1.38-7.731 4.094-10.058 7.639l-0.044 0.072c-2.096 3.097-1.406 6.057 3.015 6.153 2.92-0.122 5.625-0.942 7.983-2.297l-0.085 0.045c0.012 0-6.356 1.816-8.695 0.479l-0.010-0.003c-0.323-0.16-0.547-0.478-0.571-0.85l-0-0.003c-0.015-1.106 1.824-2.252 2.853-2.62v-1.916c0.724 0.289 1.563 0.457 2.442 0.457 1.657 0 3.175-0.598 4.35-1.589l-0.010 0.008c0.038 0.13 0.060 0.28 0.060 0.434 0 0.044-0.002 0.087-0.005 0.13l0-0.006h0.464c0.004-0.039 0.006-0.085 0.006-0.131 0-0.279-0.082-0.539-0.224-0.756l0.003 0.005c-0.247-0.381-0.664-0.633-1.141-0.65l-0.002-0c0.272 0.136 0.495 0.334 0.657 0.576l0.004 0.006c-1.068 0.901-2.459 1.448-3.978 1.448-0.661 0-1.298-0.104-1.895-0.295l0.044 0.012 1.512-1.5-0.42-1.092c2.766-1.061 6.047-1.965 9.434-2.558l0.328-0.047-0.932-0.78 0.486-0.3c2.512 0.71 4.155 1.231 4.065 2.563-0.059 0.289-0.146 0.544-0.261 0.784l0.009-0.020c-1.173 1.83-2.421 3.422-3.801 4.888l0.016-0.017c-0.537 0.586-1.048 1.223-1.516 1.892l-0.040 0.060c-0.376 0.492-0.625 1.099-0.687 1.761l-0.001 0.014c0.054 4.379 12.914-2.049 15.401-3.753-3.496 1.72-7.56 2.923-11.848 3.383l-0.16 0.014z"
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <div class="col svg">
+          <svg
+            width="90px"
+            height="90px"
+            viewBox="-3.5 0 48 48"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#ffffff"
+            stroke="#ffffff"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <title>Apple-color</title>
+              <desc>Created with Sketch.</desc>
+              <defs></defs>
+              <g
+                id="Icons"
+                stroke="none"
+                stroke-width="1"
+                fill="none"
+                fill-rule="evenodd"
+              >
+                <g
+                  id="Color-"
+                  transform="translate(-204.000000, -560.000000)"
+                  fill="#ffffff"
+                >
+                  <path
+                    d="M231.174735,567.792499 C232.740177,565.771699 233.926883,562.915484 233.497649,560 C230.939077,560.177808 227.948466,561.814769 226.203475,563.948463 C224.612784,565.88177 223.305444,568.757742 223.816036,571.549042 C226.613071,571.636535 229.499881,569.960061 231.174735,567.792499 L231.174735,567.792499 Z M245,595.217241 C243.880625,597.712195 243.341978,598.827022 241.899976,601.03692 C239.888467,604.121745 237.052156,607.962958 233.53412,607.991182 C230.411652,608.02505 229.606488,605.94498 225.367451,605.970382 C221.128414,605.99296 220.244696,608.030695 217.116618,607.999649 C213.601387,607.968603 210.913765,604.502761 208.902256,601.417937 C203.27452,592.79849 202.68257,582.680377 206.152914,577.298162 C208.621711,573.476705 212.515678,571.241407 216.173986,571.241407 C219.89682,571.241407 222.239372,573.296075 225.322563,573.296075 C228.313175,573.296075 230.133913,571.235762 234.440281,571.235762 C237.700215,571.235762 241.153726,573.022307 243.611302,576.10431 C235.554045,580.546683 236.85858,592.121127 245,595.217241 L245,595.217241 Z"
+                    id="Apple"
+                  ></path>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="col svg">
+          <svg
+            fill="#ffffff"
+            width="111px"
+            height="111px"
+            viewBox="0 0 32 32"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <title>amazon</title>
+              <path
+                d="M24.779 23.456c0.043-0.076 0.094-0.141 0.154-0.198l0-0c0.351-0.247 0.758-0.447 1.196-0.576l0.029-0.007c0.553-0.147 1.197-0.247 1.859-0.279l0.022-0.001c0.038-0.003 0.082-0.005 0.127-0.005 0.125 0 0.246 0.015 0.362 0.042l-0.011-0.002c0.758 0.070 1.225 0.196 1.367 0.385 0.073 0.119 0.116 0.263 0.116 0.418 0 0.013-0 0.026-0.001 0.039l0-0.002v0.175c-0.037 0.767-0.215 1.484-0.51 2.137l0.015-0.037c-0.303 0.776-0.762 1.432-1.344 1.956l-0.005 0.004c-0.060 0.058-0.14 0.096-0.228 0.105l-0.002 0c-0.005 0-0.011 0.001-0.017 0.001-0.031 0-0.062-0.005-0.090-0.015l0.002 0.001c-0.105-0.051-0.125-0.14-0.075-0.28 0.459-0.894 0.79-1.933 0.935-3.031l0.005-0.049c0.001-0.013 0.002-0.029 0.002-0.045 0-0.132-0.038-0.256-0.105-0.359l0.002 0.003c-0.169-0.194-0.642-0.3-1.428-0.3-0.284 0-0.622 0.019-1.015 0.054-0.424 0.052-0.817 0.105-1.167 0.157-0.011 0.001-0.023 0.002-0.036 0.002-0.065 0-0.125-0.020-0.175-0.054l0.001 0.001c-0.035-0.035-0.042-0.055-0.023-0.090 0.003-0.027 0.011-0.052 0.024-0.074l-0 0.001v-0.070zM14.090 15.258c-0.002 0.037-0.003 0.079-0.003 0.122 0 0.555 0.188 1.067 0.503 1.474l-0.004-0.006c0.31 0.367 0.77 0.599 1.284 0.599 0.022 0 0.045-0 0.067-0.001l-0.003 0c0.083-0.003 0.161-0.011 0.238-0.025l-0.010 0.002c0.056-0.013 0.122-0.022 0.19-0.027l0.004-0c0.736-0.205 1.328-0.704 1.654-1.359l0.007-0.015c0.184-0.306 0.328-0.66 0.415-1.037l0.005-0.025c0.079-0.273 0.135-0.592 0.157-0.92l0.001-0.014c0.017-0.227 0.017-0.63 0.017-1.172v-0.63c-0.085-0.003-0.184-0.004-0.284-0.004-0.693 0-1.368 0.078-2.016 0.226l0.061-0.012c-1.285 0.24-2.244 1.353-2.244 2.689 0 0.051 0.001 0.102 0.004 0.153l-0-0.007-0.041-0.023zM9.712 15.769c-0.001-0.044-0.002-0.096-0.002-0.148 0-1.066 0.325-2.056 0.881-2.876l-0.012 0.018c0.593-0.836 1.401-1.485 2.344-1.871l0.036-0.013c0.991-0.407 2.14-0.703 3.339-0.835l0.058-0.005c0.455-0.054 1.205-0.12 2.24-0.203v-0.432c0.010-0.113 0.015-0.245 0.015-0.378 0-0.653-0.134-1.276-0.377-1.84l0.012 0.030c-0.352-0.466-0.905-0.764-1.528-0.764-0.053 0-0.106 0.002-0.158 0.006l0.007-0h-0.212c-0.551 0.042-1.049 0.237-1.461 0.542l0.008-0.005c-0.401 0.31-0.685 0.755-0.785 1.265l-0.002 0.013c-0.020 0.292-0.228 0.53-0.503 0.594l-0.004 0.001-2.94-0.367c-0.289-0.070-0.434-0.21-0.434-0.455 0.001-0.063 0.010-0.123 0.027-0.18l-0.001 0.005c0.213-1.407 0.998-2.599 2.106-3.349l0.017-0.011c1.126-0.711 2.482-1.158 3.937-1.224l0.018-0.001h0.63c0.111-0.007 0.242-0.011 0.373-0.011 1.59 0 3.046 0.573 4.173 1.524l-0.010-0.008c0.157 0.175 0.315 0.35 0.473 0.56 0.121 0.153 0.23 0.325 0.322 0.508l0.008 0.017c0.104 0.192 0.183 0.415 0.226 0.651l0.002 0.014c0.070 0.296 0.122 0.49 0.157 0.595 0.053 0.214 0.085 0.461 0.089 0.715l0 0.003c0.012 0.365 0.023 0.575 0.023 0.645v6.16c-0 0.004-0 0.009-0 0.014 0 0.427 0.070 0.838 0.2 1.222l-0.008-0.027c0.088 0.299 0.213 0.561 0.374 0.796l-0.006-0.010 0.595 0.786c0.089 0.116 0.146 0.26 0.159 0.417l0 0.003c-0.005 0.154-0.087 0.288-0.208 0.365l-0.002 0.001c-1.4 1.225-2.17 1.89-2.29 1.995-0.112 0.085-0.254 0.136-0.408 0.136-0.12 0-0.232-0.031-0.33-0.085l0.003 0.002c-0.222-0.186-0.422-0.375-0.61-0.575l-0.003-0.004-0.362-0.405q-0.192-0.24-0.37-0.49l-0.35-0.508c-0.726 0.878-1.673 1.549-2.756 1.929l-0.044 0.013c-0.589 0.169-1.266 0.267-1.966 0.267-0.060 0-0.119-0.001-0.178-0.002l0.009 0c-0.048 0.002-0.104 0.003-0.16 0.003-1.185 0-2.262-0.46-3.063-1.211l0.002 0.002c-0.785-0.812-1.269-1.919-1.269-3.14 0-0.102 0.003-0.203 0.010-0.304l-0.001 0.014-0.058-0.089zM2.053 23.023c0.084-0.135 0.218-0.145 0.406-0.026 3.914 2.322 8.629 3.694 13.664 3.694 0.065 0 0.13-0 0.195-0.001l-0.010 0c3.548-0.010 6.934-0.692 10.040-1.926l-0.185 0.065 0.367-0.163c0.161-0.070 0.273-0.117 0.342-0.152 0.064-0.035 0.141-0.056 0.223-0.056 0.162 0 0.304 0.082 0.389 0.206l0.001 0.002c0.14 0.203 0.105 0.392-0.14 0.56-0.299 0.222-0.7 0.478-1.174 0.763-1.405 0.841-3.030 1.531-4.75 1.984l-0.132 0.030c-1.608 0.452-3.454 0.711-5.36 0.711-2.668 0-5.216-0.508-7.555-1.433l0.139 0.049c-2.443-0.971-4.542-2.292-6.354-3.925l0.019 0.017c-0.093-0.053-0.159-0.146-0.176-0.255l-0-0.002c0.003-0.058 0.025-0.111 0.060-0.152l-0 0z"
+              ></path>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div id="about" class="container content" style="padding-top: 100px">
+      <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2">
+        <div>
+          <h2 class="heading pb-2">About Loggie</h2>
+          <div class="underline"></div>
+          <p class="pt-4 pb-4 content" style="width: 482px">
+            Established in 1997, our logistics company has been providing
+            top-notch service for over two decades. We specialize in efficient
+            and reliable transportation and distribution solutions for
+            businesses of all sizes. Our team of experienced professionals is
+            dedicated to ensuring that your shipments arrive on time and in
+            perfect condition.
+            <br />
+            <br />
+            With a strong focus on customer satisfaction and the latest
+            technology, we have built a reputation as a leader in the industry.
+            Let us handle all of your logistics needs and experience the
+            difference for yourself.
+          </p>
+          <a class="get-started" href="./error.html">Get Started</a>
+          <a class="learn-more text-dark" href="/error.html">Learn More ></a>
+        </div>
+        <div class="container text-center pt-5">
+          <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2">
+            <div class="col pb-4">
+              <img
+                src="https://images.pexels.com/photos/1267325/pexels-photo-1267325.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                class="about-img img-fluid"
+                alt="trailer"
+              />
+            </div>
+            <div class="col pb-4">
+              <img
+                src="https://images.pexels.com/photos/3278012/pexels-photo-3278012.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                class="about-img img-fluid"
+                alt="cargo-ship"
+              />
+            </div>
+            <div class="col pb-4">
+              <img
+                src="https://images.pexels.com/photos/1267329/pexels-photo-1267329.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                class="about-img img-fluid"
+                alt="forklift"
+              />
+            </div>
+            <div class="col pb-4">
+              <img
+                src="https://images.pexels.com/photos/1117210/pexels-photo-1117210.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                class="about-img img-fluid"
+                alt="port"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="about" class="container content" style="padding-top: 100px">
+      <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2">
+        <div>
+          <h2 class="heading pb-2">Newsletter</h2>
+          <div class="underline"></div>
+          <p class="pt-4 pb-4">
+            Join Our Newletter To Get New Updated News Form Logistic Sector And
+            Get Know About Us For Start The Cooperation
+          </p>
+
+          <div class="row row row-cols-1 row-cols-sm-1 row-cols-md-3 pb-5">
+            <div class="col pb-3">
+              <input
+                type="text"
+                class="form-control p-3 name-form"
+                placeholder="Name..."
+                aria-label="Name..."
+              />
+            </div>
+            <div class="col pb-3">
+              <input
+                type="email"
+                class="form-control p-3 pr-5 email-form"
+                placeholder="Email..."
+                aria-label="Email..."
+              />
+            </div>
+            <div class="col">
+              <button type="button" class="btn toast-btn" id="liveToastBtn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                >
+                  <g id="Group" transform="translate(-840 -3825)">
+                    <path
+                      id="Vector"
+                      d="M840.883,3825.063l18.776,9.38a.614.614,0,0,1,.249.229.627.627,0,0,1,0,.655.614.614,0,0,1-.249.229l-18.778,9.38a.606.606,0,0,1-.657-.076.62.62,0,0,1-.194-.289.628.628,0,0,1-.01-.349l1.86-7.123a.62.62,0,0,1,.179-.3.607.607,0,0,1,.311-.153l8.414-1.422a.3.3,0,0,0,.138-.061.311.311,0,0,0,.092-.12l.022-.074a.313.313,0,0,0-.034-.2.306.306,0,0,0-.15-.136l-.068-.02-8.461-1.429a.61.61,0,0,1-.31-.154.621.621,0,0,1-.179-.3l-1.815-6.952a.627.627,0,0,1,.009-.35.618.618,0,0,1,.194-.289.6.6,0,0,1,.657-.077Z"
+                      fill="#fff"
+                    />
+                  </g>
+                </svg>
+              </button>
+
+              <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                <div
+                  id="liveToast"
+                  class="toast"
+                  role="alert"
+                  aria-live="assertive"
+                  aria-atomic="true"
+                >
+                  <div class="toast-header">
+                    <span class="material-symbols-outlined"> smart_toy </span>
+                    <strong class="me-auto">Loggie Bot</strong>
+                    <small>Status: Received </small>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="toast"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="toast-body">Thanks for joining!</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container text-center pt-5">
+          <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2">
+            <div class="col pb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="240"
+                height="185.936"
+                viewBox="0 0 240 185.936"
+              >
+                <path
+                  id="Vector"
+                  d="M1016.326,3814.935a69.045,69.045,0,0,1-8.859-10.222,68.275,68.275,0,0,1-6.718-11.85,68.066,68.066,0,0,1,6.507-66.343,68.685,68.685,0,0,1,31.4-24.661l6.69-2.7-5.1,4.95,1.26,1.8,12.34-3.9-9.57,7.87-.109.11,2.109,2.849,7.5-3.31-3.15,7.66c-25.81,10.351-43.15,36.15-43.15,64.2a67.728,67.728,0,0,0,8.847,33.544ZM1135.6,3761.57h0l-23.4-56.459-51.4,9.209,24.339-47.979-34.5-37.34,184.361,2.23-99.4,130.34Zm62.281-121.61-93.98,22.009-15.98,28.21,109.96-50.22Z"
+                  transform="translate(-995 -3629)"
+                  fill="#ff9a29"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid bottom-nav pt-5">
+      <div class="container text-center pb-3">
+        <div
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-4 justify-content-center"
+        >
+          <div class="col">
+            <h4 class="mt-3 footer-tagline">Order Our Services</h4>
+            <p class="description">
+              Generators On The Internet Tend To Repeat Predefined Chunks As
+              Necessary, Making This The First True
+            </p>
+          </div>
+          <div class="col">
+            <h4 class="mt-3 footer-tagline">Track My Package</h4>
+            <p class="description">
+              Emo Enim Ipsam Voluptatem Quia Voluptas Sit Aspernatur Aut Odit
+              Aut Fugit, Sed Quia Consequuntur Magni
+            </p>
+          </div>
+          <div class="col">
+            <h4 class="mt-3 footer-tagline">Warrantry Claimn</h4>
+            <p class="description">
+              Natus Error Sit Voluptatem Accusantium Doloremque Laudantium,
+              Totam Rem Aperiam, Eaque Ipsa.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <nav class="navbar bg-body-none">
+          <div class="container-fluid">
+            <div>
+              <a class="logo footer-logo text-dark" href="#home"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="39"
+                  height="39"
+                  viewBox="0 0 39 39"
+                >
+                  <g id="icon" transform="translate(-120 -42)">
+                    <path
+                      id="Rectangle_17"
+                      data-name="Rectangle 17"
+                      d="M120,61.5A19.5,19.5,0,0,1,139.5,42h0A19.5,19.5,0,0,1,159,61.5h0A19.5,19.5,0,0,1,139.5,81h0A19.5,19.5,0,0,1,120,61.5Z"
+                      fill="#ff9a29"
+                    />
+                    <path
+                      id="Vector"
+                      d="M137.717,73a2.635,2.635,0,0,1-1.33-.362l-7.078-4.17a2.653,2.653,0,0,1-.959-.977,2.7,2.7,0,0,1-.35-1.33V58.532a2.7,2.7,0,0,1,.33-1.3l.006-.007.014-.03a2.631,2.631,0,0,1,.96-.974l11.65-6.865a2.6,2.6,0,0,1,2.647,0l.006,0,7.067,4.2a2.664,2.664,0,0,1,.965.978A2.7,2.7,0,0,1,152,55.878v7.591a2.716,2.716,0,0,1-.354,1.337,2.682,2.682,0,0,1-.967.981l-11.63,6.849A2.639,2.639,0,0,1,137.717,73ZM130.25,59.649v6.512a.4.4,0,0,0,.193.344l6.15,3.626V63.354c-.069-.033-.139-.07-.206-.109Zm10.845,2.395-2.048,1.2c-.056.033-.122.068-.2.107v6.775l2.25-1.326Zm4.531-2.652h0l-2.281,1.336v6.749l2.281-1.344V59.392Zm4.125-2.417-1.875,1.1v6.735l1.672-.985a.394.394,0,0,0,.149-.149.407.407,0,0,0,.053-.2Zm-7.465-5.7a.378.378,0,0,0-.189.051L131.341,57.66l6.174,3.617a.392.392,0,0,0,.4,0l10.728-6.284-6.172-3.67A.379.379,0,0,0,142.285,51.272Z"
+                      fill="#fff"
+                    />
+                  </g>
+                </svg>
+              </a>
+            </div>
+            <div>
+              <ul class="nav justify-content-center">
+                <li class="nav-item">
+                  <a class="tabs bar-tabs nav-link text-dark" href="#home"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="tabs bar-tabs nav-link text-dark" href="#features"
+                    >Features</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="tabs bar-tabs nav-link text-dark" href="#services"
+                    >Services</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="tabs bar-tabs nav-link text-dark" href="#client"
+                    >Client</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="tabs bar-tabs nav-link text-dark" href="#about"
+                    >About</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="tabs bar-tabs nav-link text-dark" href="#contact"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <a href="https://github.com/geoescobar" target="_blank">
+                <svg
+                  width="40px"
+                  height="100px"
+                  viewBox="0 0 73 73"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  fill="#000000"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <title>team-collaboration/version-control/github</title>
+                    <desc>Created with Sketch.</desc>
+                    <defs></defs>
+                    <g
+                      id="team-collaboration/version-control/github"
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd"
+                    >
+                      <g
+                        id="container"
+                        transform="translate(2.000000, 2.000000)"
+                        fill-rule="nonzero"
+                      >
+                        <rect
+                          id="mask"
+                          stroke="#ff9a29"
+                          stroke-width="2"
+                          fill="#ff9a29"
+                          x="-1"
+                          y="-1"
+                          width="71"
+                          height="71"
+                          rx="14"
+                        ></rect>
+                        <path
+                          d="M58.3067362,21.4281798 C55.895743,17.2972267 52.6253846,14.0267453 48.4948004,11.615998 C44.3636013,9.20512774 39.8535636,8 34.9614901,8 C30.0700314,8 25.5585181,9.20549662 21.4281798,11.615998 C17.2972267,14.0266224 14.0269912,17.2972267 11.615998,21.4281798 C9.20537366,25.5590099 8,30.0699084 8,34.9607523 C8,40.8357654 9.71405782,46.1187277 13.1430342,50.8109917 C16.5716416,55.5036246 21.0008949,58.7507436 26.4304251,60.5527176 C27.0624378,60.6700211 27.5302994,60.5875152 27.8345016,60.3072901 C28.1388268,60.0266961 28.290805,59.6752774 28.290805,59.2545094 C28.290805,59.1842994 28.2847799,58.5526556 28.2730988,57.3588401 C28.2610487,56.1650247 28.2553926,55.1235563 28.2553926,54.2349267 L27.4479164,54.3746089 C26.9330843,54.468919 26.2836113,54.5088809 25.4994975,54.4975686 C24.7157525,54.4866252 23.9021284,54.4044881 23.0597317,54.2517722 C22.2169661,54.1004088 21.4330982,53.749359 20.7075131,53.1993604 C19.982297,52.6493618 19.4674649,51.9294329 19.1631397,51.0406804 L18.8120898,50.2328353 C18.5780976,49.6950097 18.2097104,49.0975487 17.7064365,48.4426655 C17.2031625,47.7871675 16.6942324,47.3427912 16.1794003,47.108799 L15.9336039,46.9328437 C15.7698216,46.815909 15.6178435,46.6748743 15.4773006,46.511215 C15.3368806,46.3475556 15.2317501,46.1837734 15.1615401,46.0197452 C15.0912072,45.855594 15.1494901,45.7209532 15.3370036,45.6153308 C15.5245171,45.5097084 15.8633939,45.4584343 16.3551097,45.4584343 L17.0569635,45.5633189 C17.5250709,45.6571371 18.104088,45.9373622 18.7947525,46.4057156 C19.4850481,46.8737001 20.052507,47.4821045 20.4972521,48.230683 C21.0358155,49.1905062 21.6846737,49.9218703 22.4456711,50.4251443 C23.2060537,50.9284182 23.9727072,51.1796248 24.744894,51.1796248 C25.5170807,51.1796248 26.1840139,51.121096 26.7459396,51.0046532 C27.3072505,50.8875956 27.8338868,50.7116403 28.3256025,50.477771 C28.5362325,48.9090515 29.1097164,47.7039238 30.0455624,46.8615271 C28.7116959,46.721353 27.5124702,46.5102313 26.4472706,46.2295144 C25.3826858,45.9484285 24.2825656,45.4922482 23.1476478,44.8597436 C22.0121153,44.2280998 21.0701212,43.44374 20.3214198,42.5080169 C19.5725954,41.571802 18.9580429,40.3426971 18.4786232,38.821809 C17.9989575,37.300306 17.7590632,35.5451796 17.7590632,33.5559381 C17.7590632,30.7235621 18.6837199,28.3133066 20.5326645,26.3238191 C19.6665366,24.1944035 19.7483048,21.8072644 20.778215,19.1626478 C21.4569523,18.951772 22.4635002,19.1100211 23.7973667,19.6364115 C25.1314792,20.1630477 26.1082708,20.6141868 26.7287253,20.9882301 C27.3491798,21.3621504 27.8463057,21.6790175 28.2208409,21.9360032 C30.3978419,21.3277217 32.644438,21.0235195 34.9612442,21.0235195 C37.2780503,21.0235195 39.5251383,21.3277217 41.7022622,21.9360032 L43.0362517,21.0938524 C43.9484895,20.5319267 45.0257392,20.0169716 46.2654186,19.5488642 C47.5058357,19.0810026 48.4543466,18.9521409 49.1099676,19.1630167 C50.1627483,21.8077563 50.2565666,24.1947724 49.3901927,26.324188 C51.2390143,28.3136755 52.1640399,30.7245457 52.1640399,33.556307 C52.1640399,35.5455485 51.9232849,37.3062081 51.444357,38.8393922 C50.9648143,40.3728223 50.3449746,41.6006975 49.5845919,42.5256002 C48.8233486,43.4503799 47.8753296,44.2285916 46.7404118,44.8601125 C45.6052481,45.4921252 44.504759,45.9483056 43.4401742,46.2293914 C42.3750975,46.5104772 41.1758719,46.7217219 39.8420054,46.8621419 C41.0585683,47.9149226 41.6669728,49.5767225 41.6669728,51.846804 L41.6669728,59.2535257 C41.6669728,59.6742937 41.8132948,60.0255895 42.1061847,60.3063064 C42.3987058,60.5865315 42.8606653,60.6690374 43.492678,60.5516109 C48.922946,58.7498829 53.3521992,55.5026409 56.7806837,50.810008 C60.2087994,46.117744 61.923472,40.8347817 61.923472,34.9597686 C61.9222424,30.0695396 60.7162539,25.5590099 58.3067362,21.4281798 Z"
+                          id="Shape"
+                          fill="#FFFFFF"
+                        ></path>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/george-escobar/"
+                target="_blank"
+              >
+                <svg
+                  fill="#ff9a29"
+                  height="48px"
+                  width="50px"
+                  version="1.1"
+                  id="Shopicons"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 48 48"
+                  xml:space="preserve"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <style type="text/css">
+                      .st0 {
+                        fill: none;
+                      }
+                    </style>
+                    <g>
+                      <path class="st0" d="M0,0h48v48H0V0z"></path>
+                      <path
+                        d="M34,4H14C8.5,4,4,8.5,4,14v20c0,5.5,4.5,10,10,10h20c5.5,0,10-4.5,10-10V14C44,8.5,39.5,4,34,4z M17,35h-4V20h4V35z M15,17 c-1.1,0-2-0.9-2-2c0-1.1,0.9-2,2-2s2,0.9,2,2C17,16.1,16.1,17,15,17z M35,35h-4v-7.5c0-2.5-1-3.6-3-3.6L24,24v11h-4V20l8-0.2 c3.4,0,7,2,7,7.6V35z"
+                      ></path>
+                    </g>
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="d-flex justify-content-center text-center copyright">
+        <p>
+          Loggie Inc Copyright 2023. All right reserved.
+          <br />
+          Developed by GE 🤠
+        </p>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
